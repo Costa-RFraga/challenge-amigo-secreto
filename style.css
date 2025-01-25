@@ -160,3 +160,36 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+/*Inserido código para botão Reset*/
+.button-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    margin-left: 10px; /* Espaço entre os botões */
+    color: var(--color-text);
+    background-color: var(--color-tertiary);
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-reset:hover {
+    background-color: #a1a1a1;
+    transform: scale(1.05);
+}
+
+/* Contêiner dos botões */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento consistente entre botões */
+    margin-top: 20px;
+}
+
+.button-draw:disabled {
+    background-color: #b3b3b3; /* Cor de fundo cinza */
+}
